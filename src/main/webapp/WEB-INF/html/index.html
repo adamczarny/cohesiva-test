@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Something rather...</title>
+    <script src="../../js/angular.min.js"></script>
+    <script src="../../js/default.js"></script>
+</head>
+<body ng-controller="defaultController">
+
+    <input type="text" ng-model="fltr">
+    <input type="button" value="sratata" onclick="getIds(fltr)">
+<div ng-repeat="thing in things">
+{{ thing.status }} {{ thing.id }}
+</div>
+</body>
+</html>
