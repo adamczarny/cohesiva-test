@@ -5,7 +5,7 @@
 <modelVersion>4.0.0</modelVersion>
 <packaging>war</packaging>
 <properties>
-    <spring-version>3.2.3.RELEASE</spring-version>
+    <spring-version>4.0.3.RELEASE</spring-version>
     <jackson-version>2.2.2</jackson-version>
 </properties>
 <groupId>org.adam</groupId>
@@ -28,7 +28,6 @@
         <artifactId>spring-tx</artifactId>
         <version>${spring-version}</version>
     </dependency>
-
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-core</artifactId>
@@ -39,6 +38,12 @@
         <artifactId>jackson-databind</artifactId>
         <version>${jackson-version}</version>
     </dependency>
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk</artifactId>
+        <version>1.7.11</version>
+    </dependency>
+
     <!--TEST-->
     <dependency>
         <groupId>junit</groupId>
@@ -57,8 +62,8 @@
     </dependency>
     <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
-        <version>2.5</version>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
     </dependency>
 </dependencies>
 </project>
